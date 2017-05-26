@@ -1,0 +1,39 @@
+.main-footer {
+  & {
+    @extend %centered;
+    @include foot($p-main, $p-main, 3 * $p-main, uppercase, $stack-oswald, $b-top, $color-background-dark);
+  }
+  & a {
+    color: $color-sec;
+    @extend %inline;
+  }
+  & a:hover {
+    color: $color-prim;
+  }
+}
+
+.toggle {
+  & {
+    @extend %inline;
+    padding-right: 2 * $p-main;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    
+    @media #{$brk-narrow} {
+      padding-left: $default;
+      flex-direction: row;
+      justify-content: space-between;
+      list-style: none;
+    }
+  }
+  & a {
+    @media #{$brk-narrow} {
+      padding: 0 120px;
+    }
+    @media #{$brk-wide} {
+      padding: 0 170px;
+    }
+  }
+}
+

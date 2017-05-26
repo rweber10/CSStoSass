@@ -1,0 +1,99 @@
+* {
+	box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  @extend %centered;
+  font-family: $stack-PT-sans;
+  line-height: $line-height;
+  margin: $default;
+}
+
+.main-body {
+  @media #{$brk-narrow} {
+    padding: $default;
+  }
+}
+
+p {
+  @extend %M-width;
+  font-size: $f-nav;
+  color: $color-prim;
+  margin: 0 $p-main;
+}
+
+h2 {
+  font-size: $f-main;
+  padding: 60px 0 5px 0;
+  text-transform: uppercase;
+  
+  @media #{$brk-narrow} {
+    text-align: center;
+    font-size: $t-break;
+    display: inline-block;
+    padding-top: $default;
+    padding: 8px 5px;
+    border: $b-nav;
+    box-shadow: $box-shadow-sec;
+    margin-bottom: 50px;
+  }
+}
+
+h3 {
+  @extend %border;
+  @extend %b-margin;
+  @extend %t-margin;
+  @include text($f-main, $color-prim, inline-block, $p-gallery, $box-shadow-main);
+}
+
+h4 {
+  @extend %border;
+  @extend %b-margin;
+  @extend %t-margin;
+  @include text($f-sec, $color-sec, inline-block, $p-gallery, $box-shadow-main);
+  text-transform: uppercase;
+  padding-bottom: $default;
+}
+
+.intro {
+  padding-left: $p-main;
+  padding-right: $p-main;
+  
+  @media #{$brk-narrow} {
+    text-align: left;
+    line-height: $p-header;
+    font-size: $intro-font-size-break;
+    float: left;
+    padding-bottom: 12 * $p-main;
+    padding-top: 4.5 * $p-main;
+  }
+
+  @media #{$brk-wide} {
+    font-size: 1.5rem;
+    padding: 45px 25px;
+  }
+}
+
+.profile {
+  @media #{$brk-narrow} {
+    float: right;
+    max-width: 40%;
+    padding-left: $p-main;
+  }
+}
+
+.wrapper {
+  min-height: calc(100vh - 60px);
+  padding: 0 $p-main;
+  
+  @media #{$brk-wide} {
+    padding-top: 10 * $p-main;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}

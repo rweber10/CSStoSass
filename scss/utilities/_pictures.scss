@@ -1,0 +1,25 @@
+/* ================================= 
+  Pictures
+==================================== */
+
+
+.profile {
+  @extend %M-width;
+  padding-bottom: 3 * $p-main;
+}
+
+.port-1,
+.port-2,
+.port-3,
+.port-6,
+.port-5,
+.port-4,
+.port-8,
+.port-7 {
+  @extend %M-width;
+  padding-top: 2 * $p-main;
+  padding-bottom: $p-main;
+}
+
+
+

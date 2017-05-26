@@ -1,0 +1,59 @@
+/* ================================= 
+  Layout Containers
+==================================== */
+
+.container {
+  @extend %clearfix;
+  padding: 0 1.2em;
+}
+
+.name {
+  @extend %centered;
+  font-size: $line-height;
+  padding-bottom: 2 * $p-main;
+  
+  @media #{$brk-wide} {
+    float: left;
+    font-size: 1.7em;
+  }
+}
+
+.name,
+.main-nav li {
+  @extend %centered;
+  @include list(none, $m-main, $m-main, $stack-oswald);
+}
+
+.name a,
+.main-nav a {
+  padding: $p-main 15px;
+  @extend %centered;
+  display: block;
+}
+
+.main-nav {
+  & {
+    padding-left: $default;
+  }
+  li {
+    @media #{$brk-narrow} {
+      display: inline-block;
+      margin-right: $p-main;
+      margin-left: $p-main;
+    }
+    @media #{$brk-wide} {
+      float: right;
+      padding-right: 40px;
+    }
+  }
+  a {
+    @extend %M-width;
+    @include text($f-nav, $color-sec, inline-block, 5px, $box-shadow-sec);
+    text-transform: uppercase; 
+    border: $b-nav;
+  }
+  a:hover {
+    color: $color-shadow-light;
+  }
+}
+

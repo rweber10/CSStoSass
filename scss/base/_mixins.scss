@@ -1,0 +1,56 @@
+// Text
+
+@mixin text($size: null, $color: null, $display: null, $padding: null, $b-shadow: null, $weight: null) {
+  font-size: $size;            
+  color: $color;
+  display: $display;
+  padding: $padding;
+  box-shadow: $b-shadow;
+  font-weight: $weight;
+}
+
+// Lists
+
+@mixin list($style, $m-top, $m-bottom, $font-family) {
+  list-style: $style;
+  margin-top: $m-top;
+  margin-bottom: $m-bottom;
+  font-family: $font-family;
+}
+
+// Footer
+
+@mixin foot($p-top, $p-bottom, $m-top, $t-trans, $font-fam, $bd-top, $bg-color) {
+  padding-top: $p-top;
+  padding-bottom: $p-bottom;
+  margin-top: $m-top;
+  text-transform: $t-trans;
+  font-family: $font-fam;
+  border-top: $bd-top;
+  background-color: $bg-color;
+}
+
+// Header
+
+@mixin head($p-top, $p-bottom, $background, $m-bottom) {
+  padding-top: $p-top;
+  padding-bottom: $p-bottom;
+  background: $background;
+  margin-bottom: $m-bottom;
+}
+
+// Contact lists
+
+@mixin contact-li($l-style, $size, $display, $p-top, $p-left) {
+  list-style: $l-style;
+  font-size: $size;
+  display: $display;
+  padding-top: $p-top;
+  padding-left: $p-left;
+}
+
+
+
+
+
+

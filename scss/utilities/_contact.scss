@@ -1,0 +1,59 @@
+/**** Contact ******/
+
+
+
+.contact {
+  & {
+    padding-top: 7.5 * $p-main;
+    
+    @media #{$brk-narrow} {
+      line-height: 2em;
+      padding-top: 10 * $p-main;
+    }
+    @media #{$brk-wide} {
+      padding: 75px 0 150px 0;
+    }
+  }
+  ul {
+    @media #{$brk-narrow} {
+      padding-bottom: 5 * $p-main;
+      font-size: $f-contact-narrow;
+    }
+  }
+  li {
+    @media #{$brk-wide} {
+      font-size: $f-main;
+      line-height: 3rem;
+      font-weight: 800;
+    }
+  }
+  p {
+    @media #{$brk-narrow} {
+      padding: 40px 0;
+      font-size: $t-break;
+    }
+    @media #{$brk-wide} {
+      max-width: 60%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.contact-info {
+  & {
+    padding-left: $default;
+  }
+  & li {
+    @include contact-li(none, $f-contact, block, $p-main, $default);
+  }
+  
+  & a {
+    color: $color-sec;
+  }
+  
+  & a:hover {
+    color: $color-link-hover;
+  }
+}
+
+

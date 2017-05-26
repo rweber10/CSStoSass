@@ -1,0 +1,11 @@
+.main-header {
+  @include head($p-header, $p-header, $color-background-light, 3 * $p-main);
+  
+  @media #{$brk-wide} {
+    position: fixed;
+    width: 100%;
+    padding: $default;
+    margin: $default;
+    border-bottom: $b-top;
+  }
+}

@@ -1,0 +1,43 @@
+// Text Centered
+
+%centered {
+  text-align: center;
+}
+
+// Borders
+
+%border {
+  border: 2px solid #666;
+}
+
+// Margins
+
+%b-margin {
+  margin-bottom: 10px;
+}
+
+%t-margin {
+  margin-top: 10px;
+}
+
+// Max Width
+
+%M-width {
+  max-width: 100%;
+}
+
+// Display inline
+
+%inline {
+  display: inline;
+}
+
+// Clearfix
+
+%clearfix {
+  &::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}

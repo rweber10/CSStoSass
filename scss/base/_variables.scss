@@ -1,0 +1,61 @@
+
+// Descriptive color variables
+
+$dark-grey          : #666;
+$grey               : #555;
+$shadow-grey        : #444;
+$light-grey         : #aaa;
+$lighter-grey       : #bbb;
+$black              : #000;
+$navy               : navy;
+$off-white          : #ddd;
+
+// Functional color variables
+
+$color-prim               : $dark-grey;
+$color-sec                : $black;
+$color-link-hover         : $navy;
+$color-shadow-dark        : $shadow-grey;
+$color-border             : $grey;
+$color-shadow-light       : $light-grey;
+$color-background-dark    : $lighter-grey;
+$color-background-light   : $off-white;
+
+// Font stacks
+
+$stack-sans-serif     : sans-serif;
+$stack-PT-sans        : 'PT Sans', $stack-sans-serif;
+$stack-oswald         : 'Oswald', $stack-sans-serif;
+
+// Font sizes
+
+$line-height              : 1.45em;
+$f-main                   : 1.15em;
+$f-sec                    : 0.85em;
+$f-nav                    : 0.95em;
+$f-contact                : 1em;
+$t-break                  : 1.35em;
+$intro-font-size-break    : 1.31em;
+$f-contact-narrow         : 1.2em;
+
+// Padding and Margin
+
+$p-main              : 10px;
+$p-header            : 1.5em;
+$p-gallery           : 2px 30px;
+$m-main              : 6px;
+$default             : 0;
+
+// Box shadows and borders
+
+$box-shadow-main      : 4px 4px 2px $color-shadow-light;
+$box-shadow-sec       : 2px 2px 3px $color-shadow-dark;
+$b-nav                : 2px solid $color-border;
+$b-top                : 2px solid $color-sec;
+
+// Media Query breakpoints
+
+$brk-narrow         :'(min-width: 768px)';
+$brk-wide           :'(min-width: 1024px)';
+
+
